@@ -1,24 +1,35 @@
 import React, {Component} from 'react';
 import './App.css';
 import NewTask from './Components/NewTask'
-// import List from './Components/List';
-// import Todo from './Components/Todo';
+import List from './Components/List';
+
 
 
 
 
 class App extends Component{
 
+  constructor() {
+    super();
 
+    this.state = {
+      list: []
+    };
+
+    this.handleAddTask = this.handleAddTask.bind(this);
+  };
+
+handleAddTask(task) {
+  this.setState({list: [...this.state.list, task]});
+}
 
 
   render() {
     return (
       <div className='App'>
         <h1>To Do List</h1>
-        <div className='App'>
-          <NewTask />
-        </div>
+          <NewTask add={this.handleAddTask}/>
+          <List tasks={this.state.list}/>
       </div>
 
     )

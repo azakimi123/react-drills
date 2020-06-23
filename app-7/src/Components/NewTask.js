@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import List from './List'
 
 
 class NewTask extends Component{
@@ -19,12 +18,8 @@ class NewTask extends Component{
       }
 
       addTask() {
-        this.setState({
-          // destructuring used to keep the previous items from the list and add the new ones to the array
-          toDoList: [...this.state.toDoList, this.state.userInput],
-          //sets the input field back to placeholder
-          userInput: ''
-        });
+        this.props.add(this.state.userInput);
+        this.setState({ userInput: ''});
       }
 
 
@@ -38,7 +33,6 @@ class NewTask extends Component{
                     placeholder='New Task'
                 />
                 <button onClick={this.addTask}>Add Task</button>
-                <List newList={this.state.list}/>
             </div>
         )
     }

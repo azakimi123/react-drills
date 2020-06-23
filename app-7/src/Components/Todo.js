@@ -6,8 +6,7 @@ class Todo extends Component{
     render() {
         return(
             <div>
-                <p>{this.props.element}</p>
-                {this.props.key}
+                <p>{this.props.task}</p>
             </div>
         )
     }
