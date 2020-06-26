@@ -1,11 +1,18 @@
 import React, {Component} from 'react';
 
 
-class Image extends Component{
+
+class Image extends Component {
+
+    constructor(props) {
+        super(props);
+    }
+
+
     render() {
-        return(
+        return (
             <div>
-                <img src={this.props.picture} alt = 'cozy pug'/>
+                <img src={this.props.picture}   alt=''/>
             </div>
         )
     }
