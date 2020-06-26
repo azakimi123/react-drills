@@ -2,12 +2,12 @@ import React, {Component} from 'react';
 
 
 
-
-
-class ToDo extends Component {
+class ToDo extends Component{
     render() {
         return(
-                <p>{this.props.task}</p>
+            <div>
+                {this.props.task}
+            </div>
         )
     }
 }
