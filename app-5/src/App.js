@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
+import Header from './Components/Header';
+import Main from './Components/Main';
+import Footer from './Components/Footer';
 import './App.css';
-import Image from './Components/Image'
+
 
 class App extends Component {
   constructor(props) {
@@ -11,7 +14,14 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <Image picture={'https://i.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68'}/>
+        <body>
+        <Header />
+        <section>
+          <Main/>
+
+        </section>
+        <Footer/>
+        </body>
       </div>
     )
   }

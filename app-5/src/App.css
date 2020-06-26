@@ -2,37 +2,70 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url('https://i.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68');
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  width: 100vw;
+  height: 100px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  margin: 10px;
+  color: rgb(255, 217, 113);
+  font-size: 20px;
+  flex-wrap: wrap;
+}
+
+.link {
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-container {
+  /* background: white; */
+  width: 100vw;
+  height: 400px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.top-heading {
+  font-size: 45px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  color: rgb(255, 217, 113);
+  margin-top: 100px;
+}
+.bottom-heading {
+  font-size: 75px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  color: rgb(255, 217, 113);
+}
+
+.icons {
+  width: 100vw;
+  height: 200px;
+  font-size: 125px;
+  color:  white;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.social-media {
+  /* background: white; */
+  width: 500px;
+  height: 10vh;
+  font-size: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 300px;
+  margin-left: 1000px;
   color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
